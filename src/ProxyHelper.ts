@@ -5,6 +5,23 @@ type ProxyHelperConfig = {
   [key: string]: any
 };
 
+/* Author Knighttower
+    MIT License
+    [2023] [Knighttower] https://github.com/knighttower
+*/
+
+/**
+* @module ProxyHelper
+* Convert to proxy to protect objects
+* Allows to declare _private, _protected and _mutable all arrays with prop names
+* @example ProxyHelper({objectProps..., _protected: array(...)})
+* @param {Object} object
+* @return {Proxy}
+* @usage const proxy = ProxyHelper({objectProps..., _protected: array(...), _private: array(...), _mutable: array(...)})
+* @usage _protected: array(...) -> Cannot be modified
+* @usage _private: array(...) -> Cannot be accessed
+* @usage _mutable: array(...) -> Can be modified
+*/
 export default function ProxyHelper(object: ProxyHelperConfig): ProxyHelperConfig {
   'use strict';
 

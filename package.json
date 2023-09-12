@@ -1,8 +1,10 @@
 {
     "name": "@knighttower/js-object-proxy-helper",
     "version": "1.0.1",
-    "main": "./src/ProxyHelper.ts",
-    "browser": "./dist/ProxyHelper.js",
+    "main": "src/ProxyHelper.ts",
+    "jsdeliver": "dist/ProxyHelper.js",
+    "unpkg": "dist/ProxyHelper.js",
+    "browser": "dist/ProxyHelper.js",
     "license": "MIT",
     "description": "Convert Object to proxy to protect the objects",
     "homepage": "https://github.com/knighttower/JsObjectProxyHelper",
