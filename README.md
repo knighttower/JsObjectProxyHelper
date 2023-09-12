@@ -5,7 +5,7 @@ Convert object to proxy to protect the objects
 
 ``yarn add @knighttower/js-object-proxy-helper``  
 
-```import { ProxyHelper } from '@knighttower/js-object-proxy-helper';```
+```import ProxyHelper from '@knighttower/js-object-proxy-helper';```
 
 ```css
 /**
