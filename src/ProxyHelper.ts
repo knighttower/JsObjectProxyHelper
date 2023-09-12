@@ -26,7 +26,10 @@ export default function ProxyHelper(object: ProxyHelperConfig): ProxyHelperConfi
           return (target[prop] = value);
         }
         let type = typeof target[prop];
-        if (type !== 'function' || !_protected.has(String(prop))) {
+        if (type === 'function') {
+          _protected.add(String(prop));
+        }
+        else if (!_protected.has(String(prop))) {
           target[prop] = value;
         } else {
           console.error('The prop is a function and cannot be modified', prop, value);

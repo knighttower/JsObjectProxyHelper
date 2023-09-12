@@ -2,6 +2,7 @@
     "name": "@knighttower/js-object-proxy-helper",
     "version": "1.0.1",
     "main": "./src/ProxyHelper.ts",
+    "browser": "./dist/ProxyHelper.js",
     "license": "MIT",
     "description": "Convert Object to proxy to protect the objects",
     "homepage": "https://github.com/knighttower/JsObjectProxyHelper",
@@ -23,9 +24,11 @@
         "url": "git://github.com/knighttower/JsObjectProxyHelper.git"
     },
     "scripts": {
-        "test": "vitest"
-      },
+        "test": "vitest",
+        "build": "tsc"
+    },
     "devDependencies": {
+        "typescript": "^5.2.2",
         "vitest": "^0.34.4"
     }
 }
