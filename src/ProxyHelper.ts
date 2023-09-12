@@ -13,14 +13,14 @@ export default function ProxyHelper(object: ProxyHelperConfig): ProxyHelperConfi
   const _mutable = new Set<string>(object._mutable || []);
 
   return new Proxy(object, {
-    get(target: ProxyHelperConfig, prop: string | symbol) {
+    get(target: ProxyHelperConfig, prop: string) {
       if (prop in target && !_private.has(String(prop))) {
         return target[prop];
       } else {
         console.error('Prop is private, not set or object is protected', prop);
       }
     },
-    set(target: ProxyHelperConfig, prop: string | symbol, value: any) {
+    set(target: ProxyHelperConfig, prop: string, value: any) {
       if (prop in target) {
         if (_mutable.has(String(prop))) {
           return (target[prop] = value);

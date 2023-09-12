@@ -1,0 +1,31 @@
+{
+    "name": "@knighttower/js-object-proxy-helper",
+    "version": "1.0.1",
+    "main": "./src/ProxyHelper.ts",
+    "license": "MIT",
+    "description": "Convert Object to proxy to protect the objects",
+    "homepage": "https://github.com/knighttower/JsObjectProxyHelper",
+    "author": "knighttower (https://github.com/knighttower)",
+    "keywords": [
+        "Utility",
+        "Vue",
+        "library",
+        "plugin",
+        "JsObjectProxyHelper",
+        "Vue 2",
+        "Vue 3",
+        "javascript",
+        "typescript",
+        "proxy"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/knighttower/JsObjectProxyHelper.git"
+    },
+    "scripts": {
+        "test": "vitest"
+      },
+    "devDependencies": {
+        "vitest": "^0.34.4"
+    }
+}
