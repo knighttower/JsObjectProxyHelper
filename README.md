@@ -18,4 +18,6 @@ Convert object to proxy to protect the objects
 * @usage _private: array(...) -> Cannot be accessed
 * @usage _mutable: array(...) -> Can be modified
 */
-```
+```  
+[![release version](https://github.com/knighttower/JsObjectProxyHelper/actions/workflows/pre-release.yml/badge.svg)](https://github.com/knighttower/JsObjectProxyHelper/actions/workflows/pre-release.yml)
+[![NPM published](https://github.com/knighttower/JsObjectProxyHelper/actions/workflows/to-npm.yml/badge.svg)](https://github.com/knighttower/JsObjectProxyHelper/actions/workflows/to-npm.yml)

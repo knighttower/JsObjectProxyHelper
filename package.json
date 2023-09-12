@@ -1,6 +1,6 @@
 {
     "name": "@knighttower/js-object-proxy-helper",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "src/ProxyHelper.ts",
     "jsdeliver": "dist/ProxyHelper.js",
     "unpkg": "dist/ProxyHelper.js",
