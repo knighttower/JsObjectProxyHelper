@@ -30,3 +30,4 @@ test('should not allow modification of functions', () => {
   obj.func = () => 2;
   if (obj.func() !== 1) throw new Error('Failed to protect function modification');
 });
+
